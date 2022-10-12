@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/b2b336628d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        box-sizing: border-box
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+    body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2,
+    h3 {
+        color: #a2c6c8;
+    }
+    
+    body {
+        font-family: 'Quicksand'sans-serif;
+    }
+    
+    header {
+        display: inline;
+    }
+    
+    .bio {
+        background-color: #8FBC8F;
+        text-align: center;
+        color: white;
+        padding: 60px;
+    }
+    
+    .bar {
+        background-color: #a2c6c8;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+    }
+    
+    .bar ul li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .bar a:hover {
+        font-weight: bold;
+    }
+    
+    .bar ul li a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: white;
+        padding-right: 15px;
+    }
+    
+    .flex-container {
+        height: 1850px;
+    }
+    
+    .flexItem-kanan {
+        order: 2;
+        flex: 1;
+        margin-left: 20px;
+    }
+    
+    .flexItem-Kiri {
+        order: 1;
+        flex: 1;
+    }
+    
+    .ilham {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+    
+    .biodata {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .table {
+        text-align: left;
+    }
+    
+    footer {
+        padding: 20px;
+        color: white;
+        background-color: #8FBC8F;
+        text-align: center;
+    }
+    
+    .exp,
+    .edu,
+    .pro,
+    .biodata {
+        box-shadow: -4px 4px 10px black;
+    }
+    
+    h2,
+    p,
+    h3 {
+        padding: 10px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    @media (min-width:600px) {
+        .flex-container {
+            display: flex;
+            height: 1250px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="bio">
+            <h1>Biodata</h1>
+        </div>
+        <nav class="bar">
+            <ul>
+                <li>
+                    <a href="#satu">Experience</a></li>
+                <li>
+                    <a href="#dua">Project</a></li>
+                <li>
+                    <a href="#tiga">Education</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <div class="flexItem-kanan">
+                <article class="exp" id="satu">
+                    <h2 class="center"><i class="fa-solid fa-briefcase"></i> Experience</h2><br>
+                    <p>- Saya memiliki pengalaman sebagai osis selama 6 tahun dengan menjabat sebagai sekertaris</p><br>
+                    <p>- Saya pernah diberi tanggung jawab untuk mengurus anak kelas 7 selama kegiatan dipondok selama setahun</p><br>
+                    <p>- saya mahir dalam pelajaran matematika, dan pernah menjadi pengajar mapel matematika untuk anak kelas 7</p><br>
+                    <p>- Pernah mengikuti olimpiade matematika tingkat kota</p><br>
+                    <p>- mahir dalam bermain basket hingga mengikuti kejuaraan dan menjadi pemain star</p><br>
+                </article>
+                <article class="pro" id="dua">
+                    <h2 class="center"><i class="fa-solid fa-file"></i> Project</h2>
+                    <p>Noting</p><br>
+                </article>
+                <article class="edu" id="tiga">
+                    <h2 class="center"><i class="fa-solid fa-school"></i> Education</h2><br>
+                    <section>
+                        <h3><i class="fa-light fa-calendar"></i> SDN Panunggangan 10, Tangerang</h3>
+                        <p>2010-2016</p>
+                        <hr>
+
+                        <h3><i class="fa-regular fa-calendar"></i> SMPIT AL-MUSTOFA, Tangerang</h3>
+                        <P>2016-2019</P>
+                        <hr>
+
+                        <h3><i class="fa-solid fa-calendar"></i> Boarding school Minhaj Shahabar, Bogor</h3>
+                        <p>2019-2022</p>
+                    </section>
+                </article>
+            </div>
+            <aside class="flexItem-kiri">
+                <article class="biodata">
+                    <h2><i class="fa-solid fa-person"></i> About Me</h2>
+                    <img class="ilham" src="ilham.png">
+                    <figcaption>
+                        <h3>Muhamad Ilham Mubarrok</h3>
+                    </figcaption>
+                    <section class="table">
+                        <p><i class="fa-solid fa-briefcase"></i> Web Developer | Content Creator</p><br>
+                        <p><i class="fa-solid fa-house"></i> Tangerang</p><br>
+                        <p><i class="fa-solid fa-envelope"></i> kagamayta721@gmail.com</p><br>
+                        <p><i class="fa-solid fa-phone"></i> +6281389963530</p><br>
+                    </section>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created with by <span>Muhamad Ilham Mubarrok</span></p>
+    </footer>
+
+</body>
+
+</html>
